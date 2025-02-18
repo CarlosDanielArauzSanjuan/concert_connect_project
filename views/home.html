@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
@@ -15,9 +15,9 @@
 
              <!-- Notifications button -->
           <button type="button" class="hicon_button" onclick="toggleMenu()">
-            <span class="material-hicons">notifications</span>
-            <img src="img" alt="">
-        </button>
+            <span class="material-hicons"></span>
+            <img src="/storage/img/Frame 34567.svg" alt="">       
+          </button>
         </div>
 
         <h1>Find</h1>
@@ -44,8 +44,65 @@
           </ul>
         </nav>
 
-      </header>
+    </header>
+    <section id="trending-events">
 
+      <!--popular events -->
+    <div class="top-trending">
+      <b style="font-size: 2rem">Trending Events</b>
+      <a href="#">See all</a>
+    </div>
+
+
+<!-- Carousel -->
+   
+    <div class="carousel">
+       <!-- each "carousel-item" is an event-->
+      <div class="carousel-item">
+        <div class="info-event">
+          <h3>Camilo: Nuestro lugar feliz</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
+          <p><i class="fas fa-calendar-alt"></i> December 6 2024</p>
+          <p class="price">IDR800.000</p>
+        </div>
+
+       <a href=""><img src="../images/conciertocamilo.jpg" alt="" /></a> 
+      </div>
+
+      <div class="carousel-item">
+        <div class="info-event black">
+          <h3>Melendi</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
+          <p><i class="fas fa-calendar-alt"></i> November 8 2024</p>
+          <p class="price">IDR800.000</p>
+        </div>
+
+        <a href="../pages/description.html"><img src="../images/conciertomelendi.png" alt="" /></a>
+      </div>
+
+      <div class="carousel-item">
+        <div class="info-event">
+          <h3>Panorama Reik</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
+          <p><i class="fas fa-calendar-alt"></i>2025</p>
+          <p class="price">IDR800.000</p>
+        </div>
+
+        <img src="../images/conciertoreik.jpg" alt="" />
+      </div>
+
+      <div class="carousel-item">
+        <div class="info-event">
+          <h3>Jose Madero</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
+          <p><i class="fas fa-calendar-alt"></i>May 152025</p>
+          <p class="price">IDR800.000</p>
+        </div>
+        <img src="../images/JOSEMADERO_DETALLE.webp" alt="" />
+      </div>
+
+    </div>
+  </section>
 
 
 
