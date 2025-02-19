@@ -1,8 +1,8 @@
+@import url(variables.css);
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "inter"
   }
   body {
     margin: 3vh;
@@ -32,10 +32,14 @@
   .firsth1 {
     color: #761cbc;
     padding-bottom: 3vh;
+    font-family: "Inter_18pt-SemiBold";
+
   }
   
   h1 {
     color: black;
+    font-family: "Inter_18pt-SemiBold";
+
   }
 
   .hicon_button{
@@ -103,7 +107,8 @@
     box-shadow: 2px 2px 6px rgb(183, 181, 181);
     align-items: center;
     justify-content: center;
-    
+    font-family: "Inter_18pt-Regular";  
+    font-weight: lighter;  
   }
   .hicons_search {
     width: 17px!important;
@@ -117,6 +122,8 @@
   .input_search {
     border: none;
     position: relative;
+    font-family: "Inter_18pt-Regular";  
+    font-weight: lighter;  
   }
   
   .input_search:focus {
@@ -127,6 +134,8 @@
   }
 
   nav {
+    font-family: "Inter_18pt-Regular";  
+    font-weight: lighter;  
     margin-top: 3vh;
     overflow-x: auto;
     white-space: nowrap;
@@ -142,6 +151,7 @@
     flex: 0 0 auto;
     margin-right: 3vw;
     margin-bottom: 5vh;
+    padding: 0px 10px 0px 10px;
   }
   
   nav a {
@@ -184,14 +194,13 @@
     background-color: #ddffdc;
     border-radius: 8px;
   }
-  nav a:hover {
-    background-color: #c874ff6e;
-    color: white;
+  nav li:hover {
+    background-color: #771cbca3;
     border-radius: 8px;
-    transform: translateY(5px);
-  }
+    transform: translateY(6px);
+    font-weight: bolder;
 
-
+    }
   /*------------ section events------------*/
 
   #trending_section {
@@ -202,11 +211,16 @@
     justify-content: space-between;
     padding-right: 2vh;
     text-decoration: none;
+    font-family: "Inter_18pt-SemiBold";
+    font-size: 18px;
   }
   
   .trending a {
     text-decoration: none;
-    color: rgb(78, 78, 78);
+    color: rgb(129, 129, 129);
+    font-size: 14px;
+    font-weight: lighter !important;
+
   }
   .trending a:hover {
       text-decoration: none;
@@ -216,8 +230,8 @@
 
   /*------------ Carousel ------------*/
   .carousel {
-    margin-top: 3vh;
-    margin-bottom: 30px;
+    margin-top: 2vh;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -230,7 +244,7 @@
       max-width: 100%;
       object-fit: cover;
       position: relative;
-      margin-right: 8px;
+      margin-right: 1rem;
       
     }
   }
@@ -240,10 +254,29 @@
 
   /*------------ near treding ------------*/
 
+  .near_trending{
+  font-family: "Inter_18pt-SemiBold";
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2vh;
+  text-decoration: none;  
+  }
+  
+  .near_trending b{
+    font-size: 18px;
+  } 
   .near_trending a {
     text-decoration: none;
-    color: rgb(78, 78, 78);
+    color: rgb(129, 129, 129);
+    font-size: 14px;
+    font-weight: lighter !important;
+
   }
+  .near_trending a:hover {
+      text-decoration: none;
+      color: rgb(105, 0, 153);
+  }
+
   .black {
     color: black;
   }
@@ -251,12 +284,12 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding-top: 15px;
   }
   
   .grid_events {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -265,11 +298,11 @@
   /* style features for every card event */
 
   .card_event {
-    background-color: hsl(var(--card));
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-family: "Inter_18pt-SemiBold";
   }
   
   .card_event:hover {
@@ -285,6 +318,8 @@
   
   .details {
     padding: 1rem;
+    font-family: "Inter_18pt-Regular";
+    font-size: 10px;
   }
   
   .title {
