@@ -5,14 +5,19 @@
     box-sizing: border-box;
   }
 
+.fondo{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+
+  }
 .info  {
-    background-image: url(../storage/detail-img/Rectangle\ 4111.png);
     width: 100%;
     height: 50%;
     background-size: cover;
-    margin-top: -80px;
-    position: absolute;
-    z-index: -1000;
+    margin-top: -30px;
+    display: flex;
 }
 .tituloh3{
     color: rgb(123, 0, 175);
@@ -29,15 +34,18 @@
     font-family: "Inter_18pt-Regular";
     font-size: 12px;
 }
-
+.another{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 6px;
+}
 .info-event{
-    position: absolute;
     background-color: white;
-    top: 80%;
-    left: 5vw;
     border-radius: 10px;
     padding: 20px;
     width: 90%;
+    margin-top: 50%;
+    margin-left: 15px;
     box-shadow: 0px 5px 5px  rgba(46, 46, 46, 0.137);
     font-family: "Inter_18pt-SemiBold";
     h3{
@@ -62,23 +70,24 @@
 }
 
 .description{
-    color: rgb(36, 36, 37);
-    position: absolute;
-    top: 55vh;
+    color: rgb(36, 36, 37);;
     overflow:visible;
     z-index: -1;
     margin: 6vh 3vh 0vh 3vh;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .description h3{
     font-family: "Inter_18pt-Medium";
     font-size: 14px;
 }
-
+iframe{
+    margin-top: 12px;
+}
 .description p{
     font-family: "Inter_18pt-Regular";
     font-size: 14px;
     color: rgb(180, 173, 173);
+    margin-top: -10px;
 }
 
 .description a{
@@ -86,10 +95,8 @@
     color: rgb(0, 174, 255);
     font-family: "Inter_18pt-Regular";
     font-size: 14px;
-
 }
 .location{
-   position: relative;
    top: 580px;
    display: flex;
    justify-content: center;
@@ -149,12 +156,13 @@
 .config{
     display: flex;
     justify-content: space-between;
-    
+    padding: 22px;
+    align-items: center;
 }
 
 /* buttons style */
 
-.back:hover{
+.btn_back:hover{
     background-color: #b75fff6e;
 }
 
@@ -163,11 +171,10 @@
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    color: white;
-    position: absolute;
-    top: 16vh;
+    color: white;;
+    top: 6vh;
     left: 5vw;
-    z-index: 1000;
+    z-index: +1;
 }
 
 .options:hover{
@@ -175,13 +182,11 @@
 }
 
 .options{
-    background-color: #ffffff63;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    color: white;
-    position: absolute;
-    top: 16vh;
+    color: white;;
+    top: 6vh;
     right: 5vw;
-    z-index: 1000;
+    z-index: +1;
 }
