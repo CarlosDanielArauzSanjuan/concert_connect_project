@@ -5,32 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
-
-    <header>
+  <header>
         <div class="top">
-          <i class="top_hicon_button"></i>
+          <button class="top_hicon_button hicon_button">
+            <img src="/storage/img/Menu.svg" alt="">
+          </button>
 
              <!-- Notifications button -->
           <button type="button" class="hicon_button" onclick="toggleMenu()">
             <span class="material-hicons"></span>
-            <img src="/storage/img/Frame 34567.svg" alt="">       
+            <img src="/storage/img/Frame 34567.svg" alt=""> 
+            <span class="hicon-button_badge">2</span>      
           </button>
         </div>
 
         <h1>Find</h1>
         <h1 class="firsth1">Trending Events</h1>
 
-            <!-- Icons search -->
+            <!-- Hicons search -->
         <div class="search_container grid">
-          <i class="grid_item icons fa_solid fa_magnifying_glass"></i>
+          
+            <img class="hicons_search" src="/storage/img/Search 3.svg" alt="">
+       
           <input type="search" class="grid_item input_search" placeholder="Search events..." class="search_input" />
-          <i class="grid_item"></i>
+          <i class="grid_item">
+            <img class="hicons_search2" src="/storage/img/Filter 6.svg" alt="">
+          </i>
         </div>
 
-        <!-- Categories Nav -->
+           <!-- Categories Nav -->
         <nav>
           <ul>
             <li><a href="#">Music Concert</a></li>
@@ -43,66 +48,9 @@
             <li><a href="#">Circus</a></li>
           </ul>
         </nav>
+  </header>
 
-    </header>
-    <section id="trending-events">
-
-      <!--popular events -->
-    <div class="top-trending">
-      <b style="font-size: 2rem">Trending Events</b>
-      <a href="#">See all</a>
-    </div>
-
-
-<!-- Carousel -->
-   
-    <div class="carousel">
-       <!-- each "carousel-item" is an event-->
-      <div class="carousel-item">
-        <div class="info-event">
-          <h3>Camilo: Nuestro lugar feliz</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
-          <p><i class="fas fa-calendar-alt"></i> December 6 2024</p>
-          <p class="price">IDR800.000</p>
-        </div>
-
-       <a href=""><img src="../images/conciertocamilo.jpg" alt="" /></a> 
-      </div>
-
-      <div class="carousel-item">
-        <div class="info-event black">
-          <h3>Melendi</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
-          <p><i class="fas fa-calendar-alt"></i> November 8 2024</p>
-          <p class="price">IDR800.000</p>
-        </div>
-
-        <a href="../pages/description.html"><img src="../images/conciertomelendi.png" alt="" /></a>
-      </div>
-
-      <div class="carousel-item">
-        <div class="info-event">
-          <h3>Panorama Reik</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
-          <p><i class="fas fa-calendar-alt"></i>2025</p>
-          <p class="price">IDR800.000</p>
-        </div>
-
-        <img src="../images/conciertoreik.jpg" alt="" />
-      </div>
-
-      <div class="carousel-item">
-        <div class="info-event">
-          <h3>Jose Madero</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Bogota, Colombia</p>
-          <p><i class="fas fa-calendar-alt"></i>May 152025</p>
-          <p class="price">IDR800.000</p>
-        </div>
-        <img src="../images/JOSEMADERO_DETALLE.webp" alt="" />
-      </div>
-
-    </div>
-  </section>
+ 
 
 
 
