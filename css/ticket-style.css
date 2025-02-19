@@ -1,3 +1,5 @@
+@import url(ticket-variables.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -136,23 +138,44 @@ body{
 .grid {
     display: grid;
     gap: 16px;
-    padding: 10px;
     font-size: 1rem;
+    b{
+        padding-top: 10px;
+        font-family: "Inter_18pt-SemiBold";
+        font-size: 18px;
+    }
+}
+.grid small{
+    font-family: "Inter_18pt-Regular";
+    font-size: 12px;
+
 }
 .rows {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     text-align: left;
+
+}
+.value{
+    color: #000000;
+    font-family: "Inter_18pt-SemiBold";
+    font-size: 14px;
 }
 .title{
     font-size: 14px;
     color: #64748b;
+    font-family: "Inter_18pt-Medium";
+    font-size: 12px;
+    font-weight: lighter !important;
+
 }
 .information {
     font-size: 16px;
-    font-weight: 500;
-    color: #1e293b;
+    font-weight: 400;
+    color: #000000;
+    font-family: "Inter_18pt-SemiBold";
+    font-size: 14px;
 }
 .scan{
     color: #000000;
@@ -160,6 +183,9 @@ body{
     font-size: 12px;
     font-weight: 400;
     position: fixed;
-    left: 110px;
+    left: 95px;
+    align-items: center;
     top: 590px;
+    font-family: "Inter_18pt-Regular";
+    font-size: 12px;
   }
