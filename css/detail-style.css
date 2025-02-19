@@ -115,6 +115,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px 10px 20px;
+
     small{
         font-family: "Inter_18pt-Regular";
         font-size: 10px;
@@ -131,11 +132,12 @@
 .btn-buy{
     background-color: #761CBC;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 15px;
     color: white;
     font-family:  "Inter_18pt-Medium";
     font-size: 14px;
+
 }
 .btn{
     padding: 4px;
